@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+.brand-logo {
+  font-family: 'Lobster Two', cursive;
+}
+
+h1.home {
+  font-family: 'Lobster Two', cursive;
+}
