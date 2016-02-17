@@ -5,8 +5,23 @@
   <div class="col s8">
     <%= image_tag current_user.image_url, class: "responsive-img circle" %>
     <h2> <%= current_user.nickname %> </h2>
+    <h5> <%= current_user.name %> </h5>
     <h5> <%= current_user.bio %> </h5>
     <h5> <%= current_user.website %> </h5>
+
+    <table>
+      <thead>
+        <tr>
+            <th data-field="posts"><%= @info.counts[:media] %> posts</th>
+            <th data-field="name"><%= @info.counts[:followed_by] %> followers</th>
+            <th data-field="price"><%= @info.counts[:follows] %> following</th>
+        </tr>
+      </thead>
+    </table>
   </div>
   <div class="col s2"></div>
+
+  <% @media.each do |media| %>
+    <%= image_tag media.images[:low_resolution][:url] %>
+  <% end %>
 </div>
