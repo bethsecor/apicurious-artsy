@@ -1,0 +1,9 @@
+<nav>
+   <div class="nav-wrapper indigo darken-4">
+     <a href="/feed" class="brand-logo">    Artsy</a>
+     <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="/profile"><%= current_user.nickname %></a></li>
+      <li><%= link_to "Logout", logout_path, method: :delete %></li>
+    </ul>
+  </div>
+</nav>
