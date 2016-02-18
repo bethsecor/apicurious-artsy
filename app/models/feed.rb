@@ -3,10 +3,16 @@ class Feed
     InstagramService.new
   end
 
+  def followed_users(token)
+    service.follows(token)[:data].map { |user| user[:id] }
+  end
+
   def self.all(token)
-    service.follows(token)[:data].map do |user|
-      build_object(media)
+    user_ids = followed_users(token)
+    all_media = user_ids.map do |id|
+      service.other_user_media(id, token).map { |media| build_object(media) }
     end
+    all_media.flatten
   end
 
   private
