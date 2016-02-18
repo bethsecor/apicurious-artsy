@@ -1,27 +1,34 @@
 <%= render partial: 'shared/navbar' %>
 
 <div class="container">
-  <div class="col s2"></div>
-  <div class="col s8">
-    <%= image_tag current_user.image_url, class: "responsive-img circle" %>
-    <h2> <%= current_user.nickname %> </h2>
-    <h5> <%= current_user.name %> </h5>
-    <h5> <%= current_user.bio %> </h5>
-    <h5> <%= current_user.website %> </h5>
-
-    <table>
-      <thead>
-        <tr>
-            <th data-field="posts"><%= @info.counts[:media] %> posts</th>
-            <th data-field="name"><%= @info.counts[:followed_by] %> followers</th>
-            <th data-field="price"><%= @info.counts[:follows] %> following</th>
-        </tr>
-      </thead>
-    </table>
+  <div class="col s3"></div>
+  <div class="col s6">
+    <div class="profile">
+      <%= image_tag current_user.image_url, class: "responsive-img circle profile-photo" %>
+      <div class="profile-info">
+        <h4> <%= current_user.nickname %> </h4>
+        <p> <%= current_user.name %> <p>
+        <p> <%= current_user.bio %> </p>
+        <p> <%= link_to current_user.website %> </p>
+        <div class="stats-table">
+          <table class="centered">
+            <tbody>
+              <tr>
+                <th data-field="posts"><%= @info.counts[:media] %> posts</th>
+                <th data-field="name"><%= @info.counts[:followed_by] %> followers</th>
+                <th data-field="price"><%= @info.counts[:follows] %> following</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="col s2"></div>
+  <div class="col s3"></div>
 
-  <% @media.each do |media| %>
-    <%= image_tag media.images[:low_resolution][:url] %>
-  <% end %>
+  <div class="center">
+    <% @media.each do |media| %>
+    <%= link_to image_tag(media.images[:low_resolution][:url]), photo_path(media.id) %>
+    <% end %>
+  </div>
 </div>
