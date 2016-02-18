@@ -19,10 +19,6 @@
   padding-left: 10px !important;
 }
 
-h1.home {
-  font-family: 'Lobster Two', cursive;
-}
-
 p, h2, h3, h4, h5, h6 {
   font-family: 'Arvo', serif;
 }
@@ -71,4 +67,20 @@ p, h2, h3, h4, h5, h6 {
   vertical-align: top;
   padding-left: 30px;
   max-width: 400px;
+}
+
+/* HOMEPAGE */
+
+h1.home {
+  font-family: 'Lobster Two', cursive;
+  color: white;
+  font-size: 10em;
+}
+
+.home-container {
+  padding-top: 200px;
+}
+
+.login-button {
+  padding-top: 10px;
 }

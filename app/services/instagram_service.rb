@@ -2,7 +2,11 @@ class InstagramService
   attr_reader :connection
 
   def initialize
-    @connection = Faraday.new(url: "https://api.instagram.com/v1")
+    @connection = Faraday.new(url: "https://api.instagram.com/v1") do |faraday|
+      faraday.request :url_encoded
+      faraday.response :logger
+      faraday.adapter Faraday.default_adapter
+    end
   end
 
   def user_media(token)
@@ -25,13 +29,13 @@ class InstagramService
     parse(connection.get("media/#{id}/likes", { access_token: token }))
   end
 
-  # def follows(token)
-  #   parse(connection.get("users/self/follows", { access_token: token }))
-  # end
+  def follows(token)
+    parse(connection.get("users/self/follows", { access_token: token }))
+  end
 
-  # def tag_media(tag_name, token)
-  #   parse(connection.get("tags/#{tag_name}/media/recent", { access_token: token }))
-  # end
+  def tag_media(tag_name, token)
+    parse(connection.get("tags/#{tag_name}/media/recent", { access_token: token }))
+  end
 
   private
 

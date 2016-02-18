@@ -8,7 +8,8 @@ class Feed
   end
 
   def self.all(token)
-    user_ids = followed_users(token)
+    binding.pry
+    user_ids = service.follows(token)[:data].map { |user| user[:id] }
     all_media = user_ids.map do |id|
       service.other_user_media(id, token).map { |media| build_object(media) }
     end
