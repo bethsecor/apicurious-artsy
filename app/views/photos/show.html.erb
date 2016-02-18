@@ -1,0 +1,18 @@
+<%= render partial: 'shared/navbar' %>
+
+<div class="container">
+  <div class="post">
+      <%= image_tag @photo.images[:standard_resolution][:url], class: "photo" %>
+      <div class="comments">
+        <p><%= pluralize(@photo.likes[:count], 'like') %></p>
+        <p>Liked by: <%= @likers %></p>
+        <p> <span class="username"><%= @photo.user[:username] %></span> <%= @photo.caption[:text] %></p>
+        <% @photo.comments.each do |comment| %>
+          <p>
+            <span class="username"><%= comment[:from][:username] %></span>
+            <%= comment[:text] %>
+          </p>
+        <% end %>
+      </div>
+  </div>
+</div>

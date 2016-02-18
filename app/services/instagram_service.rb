@@ -13,6 +13,18 @@ class InstagramService
     parse(connection.get("users/self", { access_token: token }))
   end
 
+  def single_media(id, token)
+    parse(connection.get("media/#{id}", { access_token: token }))
+  end
+
+  def comments(id, token)
+    parse(connection.get("media/#{id}/comments", { access_token: token }))
+  end
+
+  def likes(id, token)
+    parse(connection.get("media/#{id}/likes", { access_token: token }))
+  end
+
   private
 
   def parse(response)
