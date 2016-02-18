@@ -1,0 +1,11 @@
+<%= render partial: 'shared/navbar' %>
+
+<div class="container">
+  <div class="center">
+    <h4>Search Results:</h4>
+    <h5><%= @artist.name %></h5>
+    <%= image_tag @artist.thumbnail %>
+    <p>Born: <%= @artist.birthday %></p>
+    <p>Hometown: <%= @artist.hometown %></p>
+  </div>
+</div>

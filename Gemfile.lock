@@ -55,11 +55,27 @@ GEM
     execjs (2.6.0)
     faraday (0.9.2)
       multipart-post (>= 1.2, < 3)
+    faraday-digestauth (0.2.1)
+      faraday (~> 0.7)
+      net-http-digest_auth (~> 1.4)
+    faraday_hal_middleware (0.0.1)
+      faraday_middleware (>= 0.9, < 0.10)
+    faraday_middleware (0.9.2)
+      faraday (>= 0.7.4, < 0.10)
     figaro (1.1.1)
       thor (~> 0.14)
+    futuroscope (0.1.11)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     hashie (3.4.3)
+    hyperclient (0.7.2)
+      faraday
+      faraday-digestauth
+      faraday_hal_middleware
+      faraday_middleware
+      futuroscope
+      net-http-digest_auth
+      uri_template
     i18n (0.7.0)
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -81,6 +97,7 @@ GEM
     multi_json (1.11.2)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    net-http-digest_auth (1.4)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     oauth2 (1.1.0)
@@ -162,6 +179,7 @@ GEM
     uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    uri_template (0.7.0)
     web-console (2.3.0)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -176,6 +194,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   faraday
   figaro
+  hyperclient
   jbuilder (~> 2.0)
   jquery-rails
   omniauth-instagram
