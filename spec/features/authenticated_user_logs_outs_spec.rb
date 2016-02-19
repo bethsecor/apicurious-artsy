@@ -1,11 +1,11 @@
 require 'rails_helper'
 
-RSpec.feature "Logins", type: :feature do
+RSpec.feature "AuthenticatedUserLogsOuts", type: :feature do
   before do
     @user = OmniAuth.config.mock_auth[:instagram]
   end
 
-  it "should redirect to profile page after logging in" do
+  it "should redirect to homepage after logging out" do
     visit root_path
 
     VCR.use_cassette("instagram_service#user_info") do
@@ -15,13 +15,9 @@ RSpec.feature "Logins", type: :feature do
 
       expect(info[:data][:username]).to eq("miss.capybara")
       expect(current_path).to eq profile_path
+      click_on "Logout"
     end
 
-    VCR.use_cassette("instagram_service#self_media") do
-      service = InstagramService.new
-      media = service.user_media(@user["credentials"]["token"])
-
-      expect(media[:data].length).to eq(3)
-    end
+    expect(current_path).to eq root_path
   end
 end
