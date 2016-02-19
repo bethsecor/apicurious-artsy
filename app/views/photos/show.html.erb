@@ -4,8 +4,10 @@
   <div class="post">
       <%= image_tag @photo.images[:standard_resolution][:url], class: "photo" %>
       <div class="comments">
-        <p><%= pluralize(@photo.likes[:count], 'like') %></p>
+        <h5><%= @photo.user[:username] %></h5>
+        <p class="likes"><%= pluralize(@photo.likes[:count], 'like') %></p>
         <p>Liked by: <%= @likers %></p>
+        <hr>
         <p> <span class="username"><%= @photo.user[:username] %></span> <%= @photo.caption[:text] %></p>
         <% @photo.comments.each do |comment| %>
           <p>

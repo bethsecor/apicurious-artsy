@@ -12,15 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= stub home
  */
 
 .brand-logo {
   font-family: 'Lobster Two', cursive;
   padding-left: 10px !important;
-}
-
-h1.home {
-  font-family: 'Lobster Two', cursive;
 }
 
 p, h2, h3, h4, h5, h6 {
@@ -30,7 +27,7 @@ p, h2, h3, h4, h5, h6 {
 /* PHOTO SHOW PAGE */
 
 .photo {
-  max-width: 600px;
+  max-width: 560px;
   display:inline-block;
 }
 
@@ -38,11 +35,19 @@ p, h2, h3, h4, h5, h6 {
   display:inline-block;
   vertical-align: top;
   padding-left: 5px;
-  max-width: 400px;
+  max-width: 360px;
 }
 
 .post {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
   padding-top: 20px;
+}
+
+.likes {
+  font-weight: bold;
 }
 
 .username {
@@ -58,6 +63,7 @@ p, h2, h3, h4, h5, h6 {
   margin-right: auto;
   width: 80%;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 .profile-photo {
@@ -71,4 +77,41 @@ p, h2, h3, h4, h5, h6 {
   vertical-align: top;
   padding-left: 30px;
   max-width: 400px;
+}
+
+/* HOMEPAGE */
+
+h1.home {
+  font-family: 'Lobster Two', cursive;
+  color: white;
+  font-size: 10em;
+}
+
+.home-container {
+  padding-top: 200px;
+}
+
+.login-button {
+  padding-top: 10px;
+}
+
+/* FEED */
+
+.feed-card {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* SEARCH */
+
+.search {
+  margin: auto;
+  padding-top: 30px;
+  padding-left: 200px;
+}
+
+.search-form {
+  width: 60%;
 }

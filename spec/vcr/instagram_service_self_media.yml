@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/users/self/media/recent?access_token=2957207955.9ffba2c.d135e9af114f4309943198e3e78c130e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '495'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Thu, 18 Feb 2016 22:28:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=e029e376859fa67c67627d18a9488c3a; expires=Thu, 16-Feb-2017 22:28:19
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Thu, 18-Feb-2016 23:28:19 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSCc583fa83c3861b5ffcb9b62f0676a220de4531dd9618c96357b85ca3f9f98ca7%3ACNrCoWgHC8OAE6mctIBxEeTwTjFBzwLU%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455834499%7D%7D;
+        expires=Wed, 18-May-2016 22:28:19 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '822'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pagination": {}, "meta": {"code": 200}, "data": [{"attribution":
+        null, "tags": [], "type": "image", "location": null, "comments": {"count":
+        1}, "filter": "Moon", "created_time": "1455819329", "link": "https://www.instagram.com/p/BB7_PyArjM2/",
+        "likes": {"count": 3}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12748315_1698329883713257_1370988345_n.jpg?ig_cache_key=MTE4NzgyMTA4ODE2MzExNTgzMA%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12748315_1698329883713257_1370988345_n.jpg?ig_cache_key=MTE4NzgyMTA4ODE2MzExNTgzMA%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12748315_1698329883713257_1370988345_n.jpg?ig_cache_key=MTE4NzgyMTA4ODE2MzExNTgzMA%3D%3D.2",
+        "width": 320, "height": 320}}, "users_in_photo": [], "caption": {"created_time":
+        "1455819329", "text": "An old family photo!", "from": {"username": "miss.capybara",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
+        "id": "2957207955", "full_name": "Miss Capybara"}, "id": "1187821096123904414"},
+        "user_has_liked": false, "id": "1187821088163115830_2957207955", "user": {"username":
+        "miss.capybara", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
+        "id": "2957207955", "full_name": "Miss Capybara"}}, {"attribution": null,
+        "tags": [], "type": "image", "location": null, "comments": {"count": 4}, "filter":
+        "Amaro", "created_time": "1455819291", "link": "https://www.instagram.com/p/BB7_LIjrjMr/",
+        "likes": {"count": 3}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12751306_1741310959435685_185600896_n.jpg?ig_cache_key=MTE4NzgyMDc2ODc3NTI1NDgyNw%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12751306_1741310959435685_185600896_n.jpg?ig_cache_key=MTE4NzgyMDc2ODc3NTI1NDgyNw%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12751306_1741310959435685_185600896_n.jpg?ig_cache_key=MTE4NzgyMDc2ODc3NTI1NDgyNw%3D%3D.2",
+        "width": 320, "height": 320}}, "users_in_photo": [], "caption": {"created_time":
+        "1455819291", "text": "I love swimming so much!", "from": {"username": "miss.capybara",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
+        "id": "2957207955", "full_name": "Miss Capybara"}, "id": "1187820771015012737"},
+        "user_has_liked": false, "id": "1187820768775254827_2957207955", "user": {"username":
+        "miss.capybara", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
+        "id": "2957207955", "full_name": "Miss Capybara"}}, {"attribution": null,
+        "tags": [], "type": "image", "location": null, "comments": {"count": 2}, "filter":
+        "Normal", "created_time": "1455819225", "link": "https://www.instagram.com/p/BB7_DBDrjMa/",
+        "likes": {"count": 4}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12677727_955130404574623_1994402671_n.jpg?ig_cache_key=MTE4NzgyMDIxMDk2NjM3NzI0Mg%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12677727_955130404574623_1994402671_n.jpg?ig_cache_key=MTE4NzgyMDIxMDk2NjM3NzI0Mg%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12677727_955130404574623_1994402671_n.jpg?ig_cache_key=MTE4NzgyMDIxMDk2NjM3NzI0Mg%3D%3D.2",
+        "width": 320, "height": 320}}, "users_in_photo": [], "caption": {"created_time":
+        "1455819225", "text": "This mustache looks good on me!", "from": {"username":
+        "miss.capybara", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
+        "id": "2957207955", "full_name": "Miss Capybara"}, "id": "1187820213499736399"},
+        "user_has_liked": false, "id": "1187820210966377242_2957207955", "user": {"username":
+        "miss.capybara", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
+        "id": "2957207955", "full_name": "Miss Capybara"}}]}'
+    http_version: 
+  recorded_at: Thu, 18 Feb 2016 22:28:19 GMT
+recorded_with: VCR 3.0.1

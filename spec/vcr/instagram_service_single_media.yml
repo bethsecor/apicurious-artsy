@@ -1,0 +1,365 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1187820768775254827_2957207955?access_token=2957207955.9ffba2c.d135e9af114f4309943198e3e78c130e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '493'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 00:36:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=a8620edff46b6f43fa85627cf3b70d63; expires=Fri, 17-Feb-2017 00:36:39
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 01:36:39 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC609dccc26783229a91979f618465f20e6dc622efe2f0f06febb75618aad4b10f%3AqBC1guAAnOMBVWpuKpFBngWu21oeJ6Iu%3A%7B%22asns%22%3A%7B%2275.71.181.212%22%3A7922%2C%22time%22%3A1455842199%7D%7D;
+        expires=Thu, 19-May-2016 00:36:39 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '551'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": {"attribution": null, "tags": [], "type":
+        "image", "location": null, "comments": {"count": 4}, "filter": "Amaro", "created_time":
+        "1455819291", "link": "https://www.instagram.com/p/BB7_LIjrjMr/", "likes":
+        {"count": 3}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12751306_1741310959435685_185600896_n.jpg?ig_cache_key=MTE4NzgyMDc2ODc3NTI1NDgyNw%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12751306_1741310959435685_185600896_n.jpg?ig_cache_key=MTE4NzgyMDc2ODc3NTI1NDgyNw%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12751306_1741310959435685_185600896_n.jpg?ig_cache_key=MTE4NzgyMDc2ODc3NTI1NDgyNw%3D%3D.2",
+        "width": 320, "height": 320}}, "users_in_photo": [], "caption": {"created_time":
+        "1455819291", "text": "I love swimming so much!", "from": {"username": "miss.capybara",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
+        "id": "2957207955", "full_name": "Miss Capybara"}, "id": "1187820771015012737"},
+        "user_has_liked": false, "id": "1187820768775254827_2957207955", "user": {"username":
+        "miss.capybara", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
+        "id": "2957207955", "full_name": "Miss Capybara"}}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 00:36:38 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1187820768775254827_2957207955/comments?access_token=2957207955.9ffba2c.d135e9af114f4309943198e3e78c130e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '492'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 00:36:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=d46e61514ecfd8a041ad12326171b5f3; expires=Fri, 17-Feb-2017 00:36:40
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 01:36:40 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSCa2f0ede8a2ffde7f5f742d2ba02cdde8183b098f9ea1174d1c321a0b1bbdf19a%3AiGAWnjKt2eQaFgFICmmka6gWTb4s88qI%3A%7B%22asns%22%3A%7B%2275.71.181.212%22%3A7922%2C%22time%22%3A1455842200%7D%7D;
+        expires=Thu, 19-May-2016 00:36:40 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '474'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": [{"created_time": "1455819985", "text":
+        "Where are you on vacation?", "from": {"username": "artofmoxie", "profile_picture":
+        "https://scontent.cdninstagram.com/t51.2885-19/10706750_852405121512571_1455045308_a.jpg",
+        "id": "16502037", "full_name": "Beth"}, "id": "1187826589168972610"}, {"created_time":
+        "1455820044", "text": "Australia!", "from": {"username": "miss.capybara",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
+        "id": "2957207955", "full_name": "Miss Capybara"}, "id": "1187827085564851056"},
+        {"created_time": "1455820101", "text": "I''ve always wanted to go to Australia!",
+        "from": {"username": "artofmoxie", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/10706750_852405121512571_1455045308_a.jpg",
+        "id": "16502037", "full_name": "Beth"}, "id": "1187827563698729890"}, {"created_time":
+        "1455824217", "text": "I''m there right now!", "from": {"username": "penneylicious",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "id": "269242292", "full_name": "Penney Gadget"}, "id": "1187862089296655203"}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 00:36:39 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1187820768775254827_2957207955/likes?access_token=2957207955.9ffba2c.d135e9af114f4309943198e3e78c130e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '491'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 00:36:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=8e69b35e02dbb522e092cbc2a6eb331c; expires=Fri, 17-Feb-2017 00:36:40
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 01:36:40 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC0c3e7314092cbb471f903cb78b40f4c13dfeefa993176a977f6d4adeeee8eab5%3Ao3QMxZCgOeY7KbaIgAj9jGmxfbK49lKz%3A%7B%22asns%22%3A%7B%2275.71.181.212%22%3A7922%2C%22time%22%3A1455842200%7D%7D;
+        expires=Thu, 19-May-2016 00:36:40 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '243'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": [{"username": "artofmoxie", "profile_picture":
+        "https://scontent.cdninstagram.com/t51.2885-19/10706750_852405121512571_1455045308_a.jpg",
+        "id": "16502037", "full_name": "Beth"}, {"username": "edgarduran303", "profile_picture":
+        "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 00:36:39 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1187820768775254827_2957207955?access_token=2957207955.9ffba2c.d135e9af114f4309943198e3e78c130e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '490'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 00:36:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=3dd0273d336cd3ffc6d0412e071d6ac7; expires=Fri, 17-Feb-2017 00:36:40
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 01:36:40 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC724b6ed463fba08fb99107182a4f8e815f6475d240fa3ddabc890de995745016%3AGBuijBoPI3C8hmfhqSGFkkb8rZr3ld0k%3A%7B%22asns%22%3A%7B%2275.71.181.212%22%3A7922%2C%22time%22%3A1455842200%7D%7D;
+        expires=Thu, 19-May-2016 00:36:40 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '551'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": {"attribution": null, "tags": [], "type":
+        "image", "location": null, "comments": {"count": 4}, "filter": "Amaro", "created_time":
+        "1455819291", "link": "https://www.instagram.com/p/BB7_LIjrjMr/", "likes":
+        {"count": 3}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12751306_1741310959435685_185600896_n.jpg?ig_cache_key=MTE4NzgyMDc2ODc3NTI1NDgyNw%3D%3D.2",
+        "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12751306_1741310959435685_185600896_n.jpg?ig_cache_key=MTE4NzgyMDc2ODc3NTI1NDgyNw%3D%3D.2",
+        "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12751306_1741310959435685_185600896_n.jpg?ig_cache_key=MTE4NzgyMDc2ODc3NTI1NDgyNw%3D%3D.2",
+        "width": 320, "height": 320}}, "users_in_photo": [], "caption": {"created_time":
+        "1455819291", "text": "I love swimming so much!", "from": {"username": "miss.capybara",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
+        "id": "2957207955", "full_name": "Miss Capybara"}, "id": "1187820771015012737"},
+        "user_has_liked": false, "id": "1187820768775254827_2957207955", "user": {"username":
+        "miss.capybara", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
+        "id": "2957207955", "full_name": "Miss Capybara"}}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 00:36:39 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1187820768775254827_2957207955/comments?access_token=2957207955.9ffba2c.d135e9af114f4309943198e3e78c130e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '489'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 00:36:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=45a2e4f8a885279b770a92d88070f542; expires=Fri, 17-Feb-2017 00:36:41
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 01:36:41 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSCfc65f8b26f3ab77b7ae2f751863bf55252fc34ada3be112e352e75221c36e4c6%3AZ2AQyn5uPaAHPCgdUeMxejW08pvug9Fc%3A%7B%22asns%22%3A%7B%2275.71.181.212%22%3A7922%2C%22time%22%3A1455842201%7D%7D;
+        expires=Thu, 19-May-2016 00:36:41 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '474'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": [{"created_time": "1455819985", "text":
+        "Where are you on vacation?", "from": {"username": "artofmoxie", "profile_picture":
+        "https://scontent.cdninstagram.com/t51.2885-19/10706750_852405121512571_1455045308_a.jpg",
+        "id": "16502037", "full_name": "Beth"}, "id": "1187826589168972610"}, {"created_time":
+        "1455820044", "text": "Australia!", "from": {"username": "miss.capybara",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
+        "id": "2957207955", "full_name": "Miss Capybara"}, "id": "1187827085564851056"},
+        {"created_time": "1455820101", "text": "I''ve always wanted to go to Australia!",
+        "from": {"username": "artofmoxie", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/10706750_852405121512571_1455045308_a.jpg",
+        "id": "16502037", "full_name": "Beth"}, "id": "1187827563698729890"}, {"created_time":
+        "1455824217", "text": "I''m there right now!", "from": {"username": "penneylicious",
+        "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12224164_1509200229374661_1127130738_a.jpg",
+        "id": "269242292", "full_name": "Penney Gadget"}, "id": "1187862089296655203"}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 00:36:40 GMT
+- request:
+    method: get
+    uri: https://api.instagram.com/v1/media/1187820768775254827_2957207955/likes?access_token=2957207955.9ffba2c.d135e9af114f4309943198e3e78c130e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Ratelimit-Remaining:
+      - '488'
+      Content-Language:
+      - en
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Vary:
+      - Cookie, Accept-Language, Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Fri, 19 Feb 2016 00:36:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Set-Cookie:
+      - csrftoken=c93fedcdcae95ba9339cc0fa4ae3bcd8; expires=Fri, 17-Feb-2017 00:36:41
+        GMT; Max-Age=31449600; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 01:36:41 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSCf31a8bb49aaffe7135944e1b206257a6e79983015f4eceb03a9e02b57279b786%3AEzdTN6pQdEW5Q9gU21TW4pUeGaFTfyPE%3A%7B%22asns%22%3A%7B%2275.71.181.212%22%3A7922%2C%22time%22%3A1455842201%7D%7D;
+        expires=Thu, 19-May-2016 00:36:41 GMT; httponly; Max-Age=7776000; Path=/
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '243'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"meta": {"code": 200}, "data": [{"username": "artofmoxie", "profile_picture":
+        "https://scontent.cdninstagram.com/t51.2885-19/10706750_852405121512571_1455045308_a.jpg",
+        "id": "16502037", "full_name": "Beth"}, {"username": "edgarduran303", "profile_picture":
+        "https://scontent.cdninstagram.com/t51.2885-19/11375236_1453807714913882_969507463_a.jpg",
+        "id": "2126510311", "full_name": "Edgar Duran"}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 00:36:40 GMT
+recorded_with: VCR 3.0.1

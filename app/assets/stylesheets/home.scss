@@ -1,3 +1,9 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  // background-size:     cover;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("http://media.gettyimages.com/photos/english-child-actors-jack-wild-as-the-artful-dodger-and-mark-lester-picture-id180255988") 50% 10%;
+  // background-image: url("http://media.gettyimages.com/photos/english-child-actors-jack-wild-as-the-artful-dodger-and-mark-lester-picture-id180255988")
+}
