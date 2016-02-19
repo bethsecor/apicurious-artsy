@@ -4,7 +4,6 @@ class TagMedia
   end
 
   def self.all(tag_name, token)
-    binding.pry
     service.tag_media(tag_name, token)[:data].map { |media| build_object(media) }
   end
 
