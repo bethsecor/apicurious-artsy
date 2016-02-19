@@ -10,6 +10,8 @@ RSpec.feature "AuthenticatedUserCanSeeDetailsOfPosts", type: :feature do
 
     VCR.use_cassette("instagram_service#user_info") do
       click_on "Login with Instagram"
+      service = InstagramService.new
+      info = service.user_info(@user["credentials"]["token"])
     end
 
     VCR.use_cassette("instagram_service#self_media") do

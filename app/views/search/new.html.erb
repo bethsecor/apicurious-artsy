@@ -1,14 +1,30 @@
 <%= render partial: 'shared/navbar' %>
 
-
 <div class="container search">
-  <h5>Search for an artist:</h5>
-  <div class="search-form">
-    <%= form_for :artsy, url: "/search", method: "get" do |f| %>
-    <%= f.text_field :artist %>
-    <%= f.label :artist %>
-    <br><br>
-    <%= f.submit "Search Artsy", class: "btn indigo darken-4" %>
+  <div class="instagram-search">
+    <h5>Search for Instagram photos with a tag:</h5>
+    <div class="search-form">
+      <%= form_for :instagram, url: "/search", method: "get" do |f| %>
+      <%= f.text_field :tag %>
+      <%= f.label :tag %>
+      <br><br>
+      <%= f.submit "Search Instagram", class: "btn indigo darken-4" %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="artsy-search">
+    <h5>Search for an artist:</h5>
+    <% flash.each do |key, value| %>
+      <%= content_tag :div, value, class: "flash #{key} left" %>
     <% end %>
+    <div class="search-form">
+      <%= form_for :artsy, url: "/search", method: "get" do |f| %>
+      <%= f.text_field :artist %>
+      <%= f.label :artist %>
+      <br><br>
+      <%= f.submit "Search Artsy", class: "btn indigo darken-4" %>
+      <% end %>
+    </div>
   </div>
 </div>

@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       X-Ratelimit-Remaining:
-      - '499'
+      - '496'
       Content-Language:
       - en
       Expires:
@@ -33,15 +33,15 @@ http_interactions:
       Cache-Control:
       - private, no-cache, no-store, must-revalidate
       Date:
-      - Thu, 18 Feb 2016 21:59:23 GMT
+      - Fri, 19 Feb 2016 17:41:35 GMT
       Content-Type:
       - application/json; charset=utf-8
       Set-Cookie:
-      - csrftoken=6bc5f8144c7ee69e0f997a44001e21b8; expires=Thu, 16-Feb-2017 21:59:23
+      - csrftoken=8c0306700bb455148a3c4bd463379247; expires=Fri, 17-Feb-2017 17:41:35
         GMT; Max-Age=31449600; Path=/
-      - s_network=; expires=Thu, 18-Feb-2016 22:59:23 GMT; Max-Age=3600; Path=/
-      - sessionid=IGSCdb8c125cc749a7a4b76e7e81c991ef282b238c77bb5902de330b536046f34aad%3ASk7h32ihgdYvNc0mpNqx0cVmFJv8v1Ds%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455832763%7D%7D;
-        expires=Wed, 18-May-2016 21:59:23 GMT; httponly; Max-Age=7776000; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 18:41:35 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSCb74ace1ce6cbef2c612dc08434fb892d60f0ae755cfaab7e348adcbf3f6e0d1a%3AUjKIr06eMnlZogwX9FG2gZJf6WWmnqMZ%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455903695%7D%7D;
+        expires=Thu, 19-May-2016 17:41:35 GMT; httponly; Max-Age=7776000; Path=/
       Connection:
       - keep-alive
       Content-Length:
@@ -52,9 +52,9 @@ http_interactions:
         "I like testing APIs.", "website": "http://turing.io", "profile_picture":
         "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
         "full_name": "Miss Capybara", "counts": {"media": 3, "followed_by": 6, "follows":
-        6}, "id": "2957207955"}}'
+        5}, "id": "2957207955"}}'
     http_version: 
-  recorded_at: Thu, 18 Feb 2016 21:59:23 GMT
+  recorded_at: Fri, 19 Feb 2016 17:41:35 GMT
 - request:
     method: get
     uri: https://api.instagram.com/v1/users/self/media/recent?access_token=2957207955.9ffba2c.d135e9af114f4309943198e3e78c130e
@@ -74,7 +74,7 @@ http_interactions:
       message: OK
     headers:
       X-Ratelimit-Remaining:
-      - '498'
+      - '495'
       Content-Language:
       - en
       Expires:
@@ -88,24 +88,24 @@ http_interactions:
       Cache-Control:
       - private, no-cache, no-store, must-revalidate
       Date:
-      - Thu, 18 Feb 2016 21:59:24 GMT
+      - Fri, 19 Feb 2016 17:41:36 GMT
       Content-Type:
       - application/json; charset=utf-8
       Set-Cookie:
-      - csrftoken=de623b5a947b8f8dff1b76fb26834d84; expires=Thu, 16-Feb-2017 21:59:24
+      - csrftoken=858412b6bad81ec328b6e215adc8b70b; expires=Fri, 17-Feb-2017 17:41:36
         GMT; Max-Age=31449600; Path=/
-      - s_network=; expires=Thu, 18-Feb-2016 22:59:24 GMT; Max-Age=3600; Path=/
-      - sessionid=IGSCf2df33077d4d5945dbbc75e1e7e0395881d52dacebb5d66dac6ec53abf87baaa%3AZmdYhHQihAWxfZi37TlgJyA66npqT905%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455832764%7D%7D;
-        expires=Wed, 18-May-2016 21:59:24 GMT; httponly; Max-Age=7776000; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 18:41:36 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSCa37c0a98e4494b41735fb1726b551ab47ffc6883142f233a2c17ff1ecf21dca2%3ANXJPrFXrS8hrHHbnTBJthLluBI66PROx%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455903696%7D%7D;
+        expires=Thu, 19-May-2016 17:41:36 GMT; httponly; Max-Age=7776000; Path=/
       Connection:
       - keep-alive
       Content-Length:
-      - '822'
+      - '829'
     body:
       encoding: ASCII-8BIT
       string: '{"pagination": {}, "meta": {"code": 200}, "data": [{"attribution":
-        null, "tags": [], "type": "image", "location": null, "comments": {"count":
-        1}, "filter": "Moon", "created_time": "1455819329", "link": "https://www.instagram.com/p/BB7_PyArjM2/",
+        null, "tags": ["capybara"], "type": "image", "location": null, "comments":
+        {"count": 2}, "filter": "Moon", "created_time": "1455819329", "link": "https://www.instagram.com/p/BB7_PyArjM2/",
         "likes": {"count": 3}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12748315_1698329883713257_1370988345_n.jpg?ig_cache_key=MTE4NzgyMTA4ODE2MzExNTgzMA%3D%3D.2",
         "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12748315_1698329883713257_1370988345_n.jpg?ig_cache_key=MTE4NzgyMTA4ODE2MzExNTgzMA%3D%3D.2",
         "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12748315_1698329883713257_1370988345_n.jpg?ig_cache_key=MTE4NzgyMTA4ODE2MzExNTgzMA%3D%3D.2",
@@ -116,8 +116,8 @@ http_interactions:
         "user_has_liked": false, "id": "1187821088163115830_2957207955", "user": {"username":
         "miss.capybara", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
         "id": "2957207955", "full_name": "Miss Capybara"}}, {"attribution": null,
-        "tags": [], "type": "image", "location": null, "comments": {"count": 4}, "filter":
-        "Amaro", "created_time": "1455819291", "link": "https://www.instagram.com/p/BB7_LIjrjMr/",
+        "tags": ["capybara"], "type": "image", "location": null, "comments": {"count":
+        5}, "filter": "Amaro", "created_time": "1455819291", "link": "https://www.instagram.com/p/BB7_LIjrjMr/",
         "likes": {"count": 3}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12751306_1741310959435685_185600896_n.jpg?ig_cache_key=MTE4NzgyMDc2ODc3NTI1NDgyNw%3D%3D.2",
         "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12751306_1741310959435685_185600896_n.jpg?ig_cache_key=MTE4NzgyMDc2ODc3NTI1NDgyNw%3D%3D.2",
         "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12751306_1741310959435685_185600896_n.jpg?ig_cache_key=MTE4NzgyMDc2ODc3NTI1NDgyNw%3D%3D.2",
@@ -128,8 +128,8 @@ http_interactions:
         "user_has_liked": false, "id": "1187820768775254827_2957207955", "user": {"username":
         "miss.capybara", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
         "id": "2957207955", "full_name": "Miss Capybara"}}, {"attribution": null,
-        "tags": [], "type": "image", "location": null, "comments": {"count": 2}, "filter":
-        "Normal", "created_time": "1455819225", "link": "https://www.instagram.com/p/BB7_DBDrjMa/",
+        "tags": ["capybara"], "type": "image", "location": null, "comments": {"count":
+        3}, "filter": "Normal", "created_time": "1455819225", "link": "https://www.instagram.com/p/BB7_DBDrjMa/",
         "likes": {"count": 4}, "images": {"low_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12677727_955130404574623_1994402671_n.jpg?ig_cache_key=MTE4NzgyMDIxMDk2NjM3NzI0Mg%3D%3D.2",
         "width": 320, "height": 320}, "thumbnail": {"url": "https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/12677727_955130404574623_1994402671_n.jpg?ig_cache_key=MTE4NzgyMDIxMDk2NjM3NzI0Mg%3D%3D.2",
         "width": 150, "height": 150}, "standard_resolution": {"url": "https://scontent.cdninstagram.com/t51.2885-15/e35/12677727_955130404574623_1994402671_n.jpg?ig_cache_key=MTE4NzgyMDIxMDk2NjM3NzI0Mg%3D%3D.2",
@@ -141,7 +141,7 @@ http_interactions:
         "miss.capybara", "profile_picture": "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
         "id": "2957207955", "full_name": "Miss Capybara"}}]}'
     http_version: 
-  recorded_at: Thu, 18 Feb 2016 21:59:24 GMT
+  recorded_at: Fri, 19 Feb 2016 17:41:36 GMT
 - request:
     method: get
     uri: https://api.instagram.com/v1/users/self?access_token=2957207955.9ffba2c.d135e9af114f4309943198e3e78c130e
@@ -161,7 +161,7 @@ http_interactions:
       message: OK
     headers:
       X-Ratelimit-Remaining:
-      - '497'
+      - '494'
       Content-Language:
       - en
       Expires:
@@ -175,15 +175,15 @@ http_interactions:
       Cache-Control:
       - private, no-cache, no-store, must-revalidate
       Date:
-      - Thu, 18 Feb 2016 21:59:24 GMT
+      - Fri, 19 Feb 2016 17:41:36 GMT
       Content-Type:
       - application/json; charset=utf-8
       Set-Cookie:
-      - csrftoken=1796782bf8380656b77cdb0167b9e437; expires=Thu, 16-Feb-2017 21:59:24
+      - csrftoken=a074f5eadbcfd0509066e99e17d7884e; expires=Fri, 17-Feb-2017 17:41:36
         GMT; Max-Age=31449600; Path=/
-      - s_network=; expires=Thu, 18-Feb-2016 22:59:24 GMT; Max-Age=3600; Path=/
-      - sessionid=IGSCb614f5c9c15cd0417c781f8edfb2b1a907090e79dc42326f771241f1e2c3344e%3ApFFk3ETtb5VtZxQRi97x3k50nEBUZiFQ%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455832764%7D%7D;
-        expires=Wed, 18-May-2016 21:59:24 GMT; httponly; Max-Age=7776000; Path=/
+      - s_network=; expires=Fri, 19-Feb-2016 18:41:36 GMT; Max-Age=3600; Path=/
+      - sessionid=IGSC78d0b0aeb5f1e09c057d694e1bbf7e0f491e316532af532647f8106fef3dc40d%3AmrqK3ogQvZUXn7cbi6S30J11JZItElSC%3A%7B%22asns%22%3A%7B%2263.145.15.98%22%3A209%2C%22time%22%3A1455903696%7D%7D;
+        expires=Thu, 19-May-2016 17:41:36 GMT; httponly; Max-Age=7776000; Path=/
       Connection:
       - keep-alive
       Content-Length:
@@ -194,7 +194,7 @@ http_interactions:
         "I like testing APIs.", "website": "http://turing.io", "profile_picture":
         "https://scontent.cdninstagram.com/t51.2885-19/s150x150/12729402_1536518483344558_1403306257_a.jpg",
         "full_name": "Miss Capybara", "counts": {"media": 3, "followed_by": 6, "follows":
-        6}, "id": "2957207955"}}'
+        5}, "id": "2957207955"}}'
     http_version: 
-  recorded_at: Thu, 18 Feb 2016 21:59:24 GMT
+  recorded_at: Fri, 19 Feb 2016 17:41:36 GMT
 recorded_with: VCR 3.0.1
