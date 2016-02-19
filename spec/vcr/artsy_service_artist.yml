@@ -1,0 +1,258 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.artsy.net/api/tokens/xapp_token
+    body:
+      encoding: UTF-8
+      string: client_id=c7c4a1f99f262a3ae9f8&client_secret=a35ded27404562fbfa5e39edfd6280ab
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 19 Feb 2016 01:33:44 GMT
+      Etag:
+      - W/"79ebf84a5efe59b3c718444ff3017994"
+      Expires:
+      - 1970-01-01 00:00:00 UTC
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - d5ea24bc-aa77-408f-b189-fdee187b3a32
+      X-Robots-Tag:
+      - noindex
+      X-Runtime:
+      - '0.028562'
+      Content-Length:
+      - '306'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"type":"xapp_token","token":"JvTPWe4WsQO-xqX6Bts49vjm-WxATTEXJ1GQaCNGlm4RIL87T7wnCmpNFjYUGmPm_U_tFvp4jKqmjsmDHhmpWOjqs0Z-6TIMLpwUWRCS-B7SJ7y142TbbE3IvA4f-azrZAGiliSAyqgO9eHL55oncucf64Uu7PZ4d8lTtPxGrz2MVUxA8B6qUEMlIC9iJgB9umKMtz2rqyovP7Bd5w6068MiL13fbjXWp1NQzKibkqA=","expires_at":"2016-02-26T01:33:44+00:00","_links":{}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 01:33:44 GMT
+- request:
+    method: get
+    uri: https://api.artsy.net/api
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/hal+json
+      Accept:
+      - application/vnd.artsy-v2+json
+      X-Xapp-Token:
+      - JvTPWe4WsQO-xqX6Bts49vjm-WxATTEXJ1GQaCNGlm4RIL87T7wnCmpNFjYUGmPm_U_tFvp4jKqmjsmDHhmpWOjqs0Z-6TIMLpwUWRCS-B7SJ7y142TbbE3IvA4f-azrZAGiliSAyqgO9eHL55oncucf64Uu7PZ4d8lTtPxGrz2MVUxA8B6qUEMlIC9iJgB9umKMtz2rqyovP7Bd5w6068MiL13fbjXWp1NQzKibkqA=
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 19 Feb 2016 01:33:44 GMT
+      Etag:
+      - W/"50a26eb8b6354159a5eba7da1922da91"
+      Expires:
+      - 1970-01-01 00:00:00 UTC
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - d2c507bb-a9a6-4b2a-a919-bf2da98b56d4
+      X-Robots-Tag:
+      - noindex
+      X-Runtime:
+      - '0.018375'
+      Content-Length:
+      - '474'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"_links":{"self":{"href":"https://api.artsy.net/api/"},"docs":{"href":"https://api.artsy.net/api/docs"},"status":{"href":"https://api.artsy.net/api/status"},"search":{"href":"https://api.artsy.net/api/search{?q}","templated":true},"current_user":{"href":"https://api.artsy.net/api/current_user"},"artists":{"href":"https://api.artsy.net/api/artists{?artwork_id,similar_to_artist_id,similarity_type,published_artworks,artworks,total_count,size,cursor,offset,sample}","templated":true},"artist":{"href":"https://api.artsy.net/api/artists/{id}","templated":true},"users":{"href":"https://api.artsy.net/api/users{?total_count,size,cursor,offset,sample}","templated":true},"user":{"href":"https://api.artsy.net/api/users/{id}","templated":true},"profiles":{"href":"https://api.artsy.net/api/profiles{?total_count,size,cursor,offset,sample}","templated":true},"profile":{"href":"https://api.artsy.net/api/profiles/{id}","templated":true},"collections":{"href":"https://api.artsy.net/api/collections{?user_id,private,total_count,size,cursor,offset,sample}","templated":true},"collection":{"href":"https://api.artsy.net/api/collections/{id}","templated":true},"collection_items":{"href":"https://api.artsy.net/api/collection_items{?user_id,collection_id,total_count,size,cursor,offset,sample}","templated":true},"collection_item":{"href":"https://api.artsy.net/api/collection_items/{id}","templated":true},"applications":{"href":"https://api.artsy.net/api/applications{?total_count,size,cursor,offset,sample}","templated":true},"application":{"href":"https://api.artsy.net/api/applications/{id}","templated":true},"genes":{"href":"https://api.artsy.net/api/genes{?artist_id,artwork_id,total_count,size,cursor,offset,sample}","templated":true},"gene":{"href":"https://api.artsy.net/api/genes/{id}","templated":true},"partners":{"href":"https://api.artsy.net/api/partners{?user_id,partner_id,total_count,size,cursor,offset,sample}","templated":true},"partner":{"href":"https://api.artsy.net/api/partners/{id}","templated":true},"shows":{"href":"https://api.artsy.net/api/shows{?partner_id,status,fair_id,total_count,size,cursor,offset,sample}","templated":true},"show":{"href":"https://api.artsy.net/api/shows/{id}","templated":true},"artworks":{"href":"https://api.artsy.net/api/artworks{?artist_id,partner_id,show_id,similar_to_artwork_id,published,total_count,size,cursor,offset,sample}","templated":true},"artwork":{"href":"https://api.artsy.net/api/artworks/{id}","templated":true},"fairs":{"href":"https://api.artsy.net/api/fairs{?status,total_count,size,cursor,offset,sample}","templated":true},"fair":{"href":"https://api.artsy.net/api/fairs/{id}","templated":true},"image":{"href":"https://api.artsy.net/api/images/{id}","templated":true},"edition":{"href":"https://api.artsy.net/api/editions/{id}{?artwork_id}","templated":true},"tokens":{"href":"https://api.artsy.net/api/tokens"}}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 01:33:45 GMT
+- request:
+    method: get
+    uri: https://api.artsy.net/api/artists/vincent-van-gogh
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/hal+json
+      Accept:
+      - application/vnd.artsy-v2+json
+      X-Xapp-Token:
+      - JvTPWe4WsQO-xqX6Bts49vjm-WxATTEXJ1GQaCNGlm4RIL87T7wnCmpNFjYUGmPm_U_tFvp4jKqmjsmDHhmpWOjqs0Z-6TIMLpwUWRCS-B7SJ7y142TbbE3IvA4f-azrZAGiliSAyqgO9eHL55oncucf64Uu7PZ4d8lTtPxGrz2MVUxA8B6qUEMlIC9iJgB9umKMtz2rqyovP7Bd5w6068MiL13fbjXWp1NQzKibkqA=
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - text/plain
+      Date:
+      - Fri, 19 Feb 2016 01:33:45 GMT
+      Location:
+      - https://api.artsy.net/api/artists/4d8b92944eb68a1b2c000264
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 302 Found
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - d2afb3ac-84b1-413f-a178-0990d4a5ebe1
+      X-Robots-Tag:
+      - noindex
+      X-Runtime:
+      - '0.034909'
+      Content-Length:
+      - '108'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"_links":{"location":{"href":"https://api.artsy.net/api/artists/4d8b92944eb68a1b2c000264"}}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 01:33:45 GMT
+- request:
+    method: get
+    uri: https://api.artsy.net/api/artists/4d8b92944eb68a1b2c000264
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/hal+json
+      Accept:
+      - application/vnd.artsy-v2+json
+      X-Xapp-Token:
+      - JvTPWe4WsQO-xqX6Bts49vjm-WxATTEXJ1GQaCNGlm4RIL87T7wnCmpNFjYUGmPm_U_tFvp4jKqmjsmDHhmpWOjqs0Z-6TIMLpwUWRCS-B7SJ7y142TbbE3IvA4f-azrZAGiliSAyqgO9eHL55oncucf64Uu7PZ4d8lTtPxGrz2MVUxA8B6qUEMlIC9iJgB9umKMtz2rqyovP7Bd5w6068MiL13fbjXWp1NQzKibkqA=
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 19 Feb 2016 01:33:45 GMT
+      Etag:
+      - W/"5b1a060bde5bd87a28e814082825e2d9"
+      Expires:
+      - 1970-01-01 00:00:00 UTC
+      Server:
+      - nginx/1.4.7
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - DENY
+      X-Request-Id:
+      - 20ec681f-96d9-4e6b-8870-232e89cd5b48
+      X-Robots-Tag:
+      - noindex
+      X-Runtime:
+      - '0.022979'
+      Content-Length:
+      - '588'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6IjRkOGI5Mjk0NGViNjhhMWIyYzAwMDI2NCIsImNyZWF0ZWRfYXQi
+        OiIyMDEwLTA4LTIzVDIwOjU0OjA4KzAwOjAwIiwidXBkYXRlZF9hdCI6IjIw
+        MTYtMDItMTlUMDE6MDE6MzkrMDA6MDAiLCJuYW1lIjoiVmluY2VudCB2YW4g
+        R29naCIsInNvcnRhYmxlX25hbWUiOiJ2YW4gR29naCBWaW5jZW50IiwiZ2Vu
+        ZGVyIjoibWFsZSIsImJpcnRoZGF5IjoiMTg1MyIsImhvbWV0b3duIjoiWnVu
+        ZGVydCwgTmV0aGVybGFuZHMiLCJsb2NhdGlvbiI6IkFybGVzLCBGcmFuY2Us
+        IFNhaW50LVLDqW15LCBGcmFuY2UgYW5kIEF1dmVycy1zdXItT2lzZSwgRnJh
+        bmNlIiwibmF0aW9uYWxpdHkiOiJEdXRjaCIsIl9saW5rcyI6eyJjdXJpZXMi
+        Olt7Im5hbWUiOiJpbWFnZSIsImhyZWYiOiJodHRwczovL2QzMmRtMHJwaGM1
+        MWRrLmNsb3VkZnJvbnQubmV0L3dNaERWTVpQNjhFUktSVkVfYzFrLWcve3Jl
+        bH0iLCJ0ZW1wbGF0ZWQiOnRydWV9XSwidGh1bWJuYWlsIjp7ImhyZWYiOiJo
+        dHRwczovL2QzMmRtMHJwaGM1MWRrLmNsb3VkZnJvbnQubmV0L3dNaERWTVpQ
+        NjhFUktSVkVfYzFrLWcvZm91cl90aGlyZHMuanBnIn0sImltYWdlOnNlbGYi
+        OnsiaHJlZiI6Ins/aW1hZ2VfdmVyc2lvbn0uanBnIiwidGVtcGxhdGVkIjp0
+        cnVlfSwic2VsZiI6eyJocmVmIjoiaHR0cHM6Ly9hcGkuYXJ0c3kubmV0L2Fw
+        aS9hcnRpc3RzLzRkOGI5Mjk0NGViNjhhMWIyYzAwMDI2NCJ9LCJwZXJtYWxp
+        bmsiOnsiaHJlZiI6Imh0dHA6Ly93d3cuYXJ0c3kubmV0L2FydGlzdC92aW5j
+        ZW50LXZhbi1nb2doIn0sImFydHdvcmtzIjp7ImhyZWYiOiJodHRwczovL2Fw
+        aS5hcnRzeS5uZXQvYXBpL2FydHdvcmtzP2FydGlzdF9pZD00ZDhiOTI5NDRl
+        YjY4YTFiMmMwMDAyNjQifSwicHVibGlzaGVkX2FydHdvcmtzIjp7ImhyZWYi
+        OiJodHRwczovL2FwaS5hcnRzeS5uZXQvYXBpL2FydHdvcmtzP2FydGlzdF9p
+        ZD00ZDhiOTI5NDRlYjY4YTFiMmMwMDAyNjQmcHVibGlzaGVkPXRydWUifSwi
+        c2ltaWxhcl9hcnRpc3RzIjp7ImhyZWYiOiJodHRwczovL2FwaS5hcnRzeS5u
+        ZXQvYXBpL2FydGlzdHM/c2ltaWxhcl90b19hcnRpc3RfaWQ9NGQ4YjkyOTQ0
+        ZWI2OGExYjJjMDAwMjY0In0sInNpbWlsYXJfY29udGVtcG9yYXJ5X2FydGlz
+        dHMiOnsiaHJlZiI6Imh0dHBzOi8vYXBpLmFydHN5Lm5ldC9hcGkvYXJ0aXN0
+        cz9zaW1pbGFyX3RvX2FydGlzdF9pZD00ZDhiOTI5NDRlYjY4YTFiMmMwMDAy
+        NjQmc2ltaWxhcml0eV90eXBlPWNvbnRlbXBvcmFyeSJ9LCJnZW5lcyI6eyJo
+        cmVmIjoiaHR0cHM6Ly9hcGkuYXJ0c3kubmV0L2FwaS9nZW5lcz9hcnRpc3Rf
+        aWQ9NGQ4YjkyOTQ0ZWI2OGExYjJjMDAwMjY0In19LCJpbWFnZV92ZXJzaW9u
+        cyI6WyJmb3VyX3RoaXJkcyIsImxhcmdlIiwic3F1YXJlIiwidGFsbCJdfQ==
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 01:33:45 GMT
+recorded_with: VCR 3.0.1
