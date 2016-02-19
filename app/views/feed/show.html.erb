@@ -3,7 +3,20 @@
 <div class="container">
   <div class="col s2"></div>
   <div class="col s8">
-    <h2 class="home center">Feed</h2>
+    <% @feed.each do |post| %>
+      <div class="card feed-card post-<%= post.id %>">
+        <div class="card-image">
+          <%= link_to image_tag(post.images[:standard_resolution][:url]),
+                      photo_path(post.id), id: "post-#{post.id}" %>
+          <span class="card-title"><%= post.user[:username] %></span>
+        </div>
+        <div class="card-content">
+          <p class="likes"><%= pluralize(post.likes[:count], 'like') %></p>
+          <br>
+          <p><%= post.caption[:text] if post.caption %></p>
+        </div>
+      </div>
+    <% end %>
   </div>
   <div class="col s2"></div>
 </div>

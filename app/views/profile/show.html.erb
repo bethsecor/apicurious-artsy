@@ -9,7 +9,7 @@
         <h4> <%= current_user.nickname %> </h4>
         <p> <%= current_user.name %> <p>
         <p> <%= current_user.bio %> </p>
-        <p> <%= link_to current_user.website %> </p>
+        <p> <%= link_to current_user.website, current_user.website %> </p>
         <div class="stats-table">
           <table class="centered">
             <tbody>

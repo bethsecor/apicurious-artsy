@@ -32,6 +32,10 @@ class InstagramService
     parse(connection.get("users/self/follows", { access_token: token }))
   end
 
+  def other_user_media(user_id, token)
+    parse(connection.get("users/#{user_id}/media/recent", { access_token: token }))
+  end
+
   def tag_media(tag_name, token)
     parse(connection.get("tags/#{tag_name}/media/recent", { access_token: token }))
   end

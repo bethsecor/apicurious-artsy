@@ -3,16 +3,12 @@ class Feed
     InstagramService.new
   end
 
-  def followed_users(token)
-    service.follows(token)[:data].map { |user| user[:id] }
-  end
-
   def self.all(token)
     user_ids = service.follows(token)[:data].map { |user| user[:id] }
     all_media = user_ids.map do |id|
-      service.other_user_media(id, token).map { |media| build_object(media) }
+      service.other_user_media(id, token)[:data].map { |media| build_object(media) }
     end
-    all_media.flatten
+    all_media.flatten.sort_by { |post| -post.created_time.to_i }
   end
 
   private
