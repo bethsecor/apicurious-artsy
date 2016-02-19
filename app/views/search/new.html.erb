@@ -1,6 +1,5 @@
 <%= render partial: 'shared/navbar' %>
 
-
 <div class="container search">
   <div class="instagram-search">
     <h5>Search for Instagram photos with a tag:</h5>
@@ -16,6 +15,9 @@
 
   <div class="artsy-search">
     <h5>Search for an artist:</h5>
+    <% flash.each do |key, value| %>
+      <%= content_tag :div, value, class: "flash #{key} left" %>
+    <% end %>
     <div class="search-form">
       <%= form_for :artsy, url: "/search", method: "get" do |f| %>
       <%= f.text_field :artist %>

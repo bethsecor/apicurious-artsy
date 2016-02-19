@@ -121,3 +121,10 @@ h1.home {
 .search-form {
   width: 60%;
 }
+
+.flash {
+  padding-top: 10px;
+  font-family: 'Arvo', serif;
+  font-size: 1em;
+  color: #7b1fa2;
+}

@@ -10,6 +10,8 @@ RSpec.feature "AuthenticatedUserCanSeeFeedOfPosts", type: :feature do
 
     VCR.use_cassette("instagram_service#user_info") do
       click_on "Login with Instagram"
+      service = InstagramService.new
+      info = service.user_info(@user["credentials"]["token"])
     end
 
     VCR.use_cassette("instagram_service#feed") do
@@ -20,7 +22,7 @@ RSpec.feature "AuthenticatedUserCanSeeFeedOfPosts", type: :feature do
 
       within(".post-#{first_post.id}") do
         expect(page).to have_content("penneylicious")
-        expect(page).to have_content("7 likes")
+        expect(page).to have_content("9 likes")
         expect(page).to have_content("Another beautiful day at the crag")
       end
 

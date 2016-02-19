@@ -10,6 +10,8 @@ RSpec.feature "AuthenticatedUserCanSearchInstagramForATags", type: :feature do
 
     VCR.use_cassette("instagram_service#user_info") do
       click_on "Login with Instagram"
+      service = InstagramService.new
+      info = service.user_info(@user["credentials"]["token"])
     end
 
     click_on "Search"
@@ -20,9 +22,15 @@ RSpec.feature "AuthenticatedUserCanSearchInstagramForATags", type: :feature do
       fill_in "Tag", with: "capybara"
       click_on "Search Instagram"
 
-      expect(current_path).to eq(search_path)
+      tag_medias = TagMedia.all("capybara", @user["credentials"]["token"])
 
+      expect(current_path).to eq(search_path)
       expect(page).to have_content("Search Results from Instagram")
+
+      tag_medias.each do |post|
+        expect(page).to have_css("#media-#{post.id}")
+        expect(post.tags).to include("capybara")
+      end
     end
   end
 end

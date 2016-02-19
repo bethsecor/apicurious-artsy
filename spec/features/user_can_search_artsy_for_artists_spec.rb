@@ -10,6 +10,8 @@ RSpec.feature "UserCanSearchArtsyForArtists", type: :feature do
 
     VCR.use_cassette("instagram_service#user_info") do
       click_on "Login with Instagram"
+      service = InstagramService.new
+      info = service.user_info(@user["credentials"]["token"])
     end
 
     click_on "Search"
@@ -25,6 +27,29 @@ RSpec.feature "UserCanSearchArtsyForArtists", type: :feature do
       expect(page).to have_content("Vincent van Gogh")
       expect(page).to have_content("Born: 1853")
       expect(page).to have_content("Hometown: Zundert, Netherlands")
+    end
+  end
+
+  it "should render new search and flash if resource not found on Artsy" do
+    visit root_path
+
+    VCR.use_cassette("instagram_service#user_info") do
+      click_on "Login with Instagram"
+      service = InstagramService.new
+      info = service.user_info(@user["credentials"]["token"])
+    end
+
+    click_on "Search"
+
+    expect(current_path).to eq(new_search_path)
+
+    VCR.use_cassette("artsy_service#artist_invalid") do
+      fill_in "Artist", with: "Vin"
+      click_on "Search Artsy"
+
+      expect(current_path).to eq(new_search_path)
+
+      expect(page).to have_content('Could not find artist on Artsy')
     end
   end
 end
